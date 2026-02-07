@@ -21,3 +21,12 @@ To install AI Waifu, follow these steps:
 To start the AI Waifu, run the following command:
 ```bash
 npm start
+
+Contributions
+Contributions are welcome! Please feel free to submit a pull request or raise an issue for any improvements you suggest.
+
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+Acknowledgments
+Special thanks to all contributors and supporters of this project!
