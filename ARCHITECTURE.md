@@ -1,27 +1,45 @@
-# System Architecture Documentation
-
-## Overview
-This document provides a comprehensive overview of the system design, data flow, and component interactions within the AI Waifu project.
+# Architecture Documentation
 
 ## System Design
-- **Architecture Style**: Microservices
-- **Key Components**:
-  - User Interface (Frontend)
-  - Backend API
-  - Database
-  - External Services (e.g., AI models)
+
+This section describes the architecture of the AI-Waifu system. It includes the major components, their responsibilities, and interactions.
+
+### Components:
+1. **User Interface (UI)**  
+   - Description: The front-end interface for users to interact with AI-Waifu.
+   - Technologies: HTML, CSS, JavaScript
+  
+2. **Application Server**  
+   - Description: Handles requests from the UI and communicates with the AI Engine.
+   - Technologies: Node.js, Express.js
+  
+3. **AI Engine**  
+   - Description: Responsible for processing user queries and generating responses based on the data provided.
+   - Technologies: Python, Machine Learning Libraries
+
+4. **Database**  
+   - Description: Stores user data, interactions, and model information.
+   - Technologies: MongoDB
+
+### Interaction Flow:
+- User sends a request through the UI.
+- The request is sent to the Application Server.
+- The Application Server processes the request and communicates with the AI Engine.
+- The AI Engine fetches necessary data from the Database and processes it.
+- The response is sent back to the Application Server, which sends it to the UI.
+
 
 ## Data Flow
-1. **User Input**: Users interact with the application via the front-end interface, submitting requests or data.
-2. **API Request**: The front-end sends requests to the Backend API through RESTful calls.
-3. **Processing**: The Backend processes the requests, potentially invoking external AI services for data processing or analysis.
-4. **Data Storage**: The results are stored in the Database for persistence.
-5. **Response**: The Backend API sends back responses to the front-end for user display.
 
-## Component Interactions
-- **Frontend <-> Backend API**: Communication via HTTP requests.
-- **Backend API <-> Database**: Database queries for data retrieval and storage.
-- **Backend API <-> External Services**: Calls to AI models for generating responses.
+1. **Data Input:**  
+   Users input data through the UI.
+2. **Data Processing:**  
+   The Application Server processes the input and sends it to the AI Engine.
+3. **Data Storage:**  
+   Intermediate results and user interactions are stored in the Database.
+4. **Data Output:**  
+   Final results are sent back to the User Interface for display.
 
-## Conclusion
-This document aims to assist developers and stakeholders in understanding the architecture and interactions within the AI Waifu system.
+--- 
+
+This documentation serves as a guide to understanding the system's architecture and data flow.
