@@ -1,17 +1,26 @@
-# SETUP GUIDE
+SETUP_GUIDE.md
 
-## Introduction
-This guide provides detailed instructions for installing and configuring the AI Waifu project for both the frontend and backend.
-
-## Prerequisites
-Before you begin, ensure you have the following installed:
-- Node.js (version >= 14)
-- npm (Node package manager)
-- Git
-- A code editor (e.g., Visual Studio Code)
+md
+# Installation Guide
 
 ## Frontend Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/ehtesham011ul-bot/ai-waifu.git
-   cd ai-waifu/frontend
+   git clone https://github.com/ehtesham011ul-bot/AI-Waifu.git
+   cd AI-Waifu/frontend
+2. Install dependencies:
+bash
+npm install
+3. Run the frontend application:
+bash
+npm start
+Backend Installation
+1. Navigate to the backend directory:
+bash
+cd AI-Waifu/backend
+2. Install dependencies:
+bash
+npm install
+3. Run the backend application:
+bash
+npm start
